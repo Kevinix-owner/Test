@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #011125;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0b4b66;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .logo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .nav {
+    display: flex;
+    gap: 10px;
+  }
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .nav a:hover {
+    background-color: #f5841a;
+  }
+  .banner {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 36px;
+    color: #0b4b66;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .card {
+    background-color: #b8eff3;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card h3 {
+    font-size: 18px;
+    color: #f5841a;
+    padding: 10px;
+  }
+  .card p {
+    font-size: 14px;
+    color: #303030;
+    padding: 10px;
+  }
+  .card a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #f5841a;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .card a:hover {
+    background-color: #f5841a;
+  }
+  .footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #0b4b66;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  @media only screen and (max-width: 768px) {
+    /* Adjust header layout for smaller screens */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav {
+        margin-top: 15px;
+    }
+    .nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    .logo img {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .main {
+        padding: 10px;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
